@@ -145,6 +145,7 @@ def requestsAggressive():
 			f.close()
 	except IOError:
 		print "Aggressive mode failed, re-run in Normal mode"
+		quit()
 
 
 '''
@@ -182,6 +183,7 @@ def requestsMS():
 			f.close()
 	except IOError:
 		print "ModSec mode failed, re-run in Normal mode"
+		quit()
 
 if (args.verbose):
 	logging.basicConfig(level=logging.INFO)
@@ -215,7 +217,6 @@ elif (args.aggressive):
 	partial.partialPlugins(ra)
 	untested.untestedPlugins(ra)
 	unsafe.unsafePlugins(ra)
-	print ('Aggressive mode is now enabled. This will make a lot of noise!!')
 else:
 	print ('You must select an operating mode with "python waflulz.py -u http://example.com -n" for normal mode or "-a" for aggresive mode')
 	exit()
