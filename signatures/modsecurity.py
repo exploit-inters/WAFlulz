@@ -11,11 +11,12 @@ def fingerprint(req):
 	if req.status_code == 501:
 		#retval = re.search(r"Reference #[0-9A-Fa-f.]+", req.text)
 		retval = re.search(r"Method Not Implemented", req.text)
-	elif req.headers['server']:
+	elif 'server' in req.headers:
 		retval = re.search(r"Mod_Security|NOYB", req.headers['server'])
 		#Send waf_payloads.py
 		#retval = re.search(r"Unauthorized Activity Has Been Detected.+Case Number:", req.headers['set-cookie'])
-
+	else : 
+		retval = False 
     #If value was returned, identify WAF
 	if retval:
 		product = "ModSecurity: Open Source Web Application Firewall (Trustwave)"
