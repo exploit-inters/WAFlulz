@@ -1,6 +1,6 @@
 Development 
 ---------------------
-The Original Tool has been created and developed by [Tonylturner](https://github.com/tonylturner) @  [This Repo](https://github.com/tonylturner) and after 4 Years I will try sometimes Update and Find Old Bugs in it. 
+The Original Tool has been created and developed by [Tonylturner](https://github.com/tonylturner) @  [This Repo](https://github.com/tonylturner) and after 4 Years i have decided to sometimes update it and keep it fuctional. 
 
 WAFlulz 
 ---------------------
