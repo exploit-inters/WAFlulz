@@ -1,3 +1,9 @@
+Development 
+---------------------
+The Original Tool has been created and developed by [Tonylturner](https://github.com/tonylturner) @  [This Repo](https://github.com/tonylturner) and after 4 Years I will try sometimes Update and Find Old Bugs in it. 
+
+WAFlulz 
+---------------------
 WAFlulz is a work in progress starting with Web Application Firewall (WAF) recon, with plans to move on to mapping and exploitation. Currently only WAF detection functionality is included. Most regex's for detection modules came from the sqlmap source for --identify-waf option. Some additional plugins or modifications have been done.
 
 WAFlulz includes a proxy randomization function, but you will need to populate the httpproxy and httpsproxy text files with your own selection of proxies using the format shown there. We do not endorse the proxies listed currently, these were just ones that were used for initial testing based on the HMA lists.
@@ -8,7 +14,7 @@ Currently, normal, modsecurity and aggressive modes are enabled, however aggress
 
 Python-Requests is REQUIRED for usage. Install with $ pip install requests or $ easy_install requests
 
-Known Working Modules (9)
+Known Working Modules
 ---------------------
 Incapsula
 Cloudflare
@@ -20,11 +26,11 @@ Fortiweb - *Updated*
 BinarySec
 United Security Providers Secure Entry Server
 
-Partially Working Modules (1)
+Partially Working Modules
 -------------------------
 ISA Server | TMG - *Updated*
 
-Untested Modules (16)
+Untested Modules
 ----------------
 ModSecurity
 DenyAll 
@@ -42,8 +48,3 @@ PaloAlto
 Knownsec
 DotDefender
 Kona
-
-
-Contributors
-------------
-David Bressler (bostonlink) helped me out a few times when I was struggling with some stupid errors. Thanks bro! Check out his work at https://github.com/bostonlink
